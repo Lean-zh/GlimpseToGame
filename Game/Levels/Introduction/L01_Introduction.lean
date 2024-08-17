@@ -1,6 +1,6 @@
-import Game.Levels.DemoWorld.L01_HelloWorld
-
+import Game.Metadata
 World "DemoWorld"
+Level 1
 Title "Demo World"
 
 Introduction "
