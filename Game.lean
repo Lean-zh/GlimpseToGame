@@ -1,20 +1,19 @@
-import Game.Levels.DemoWorld
+import GameServer.Commands
 
--- Here's what we'll put on the title screen
-Title "Hello World Game"
-Introduction
-"
-This text appears on the starting page where one selects the world/level to play.
-You can use markdown.
+-- import all worlds
+import Game.Levels.Introduction
+import Game.Levels.Basics
+import Game.Levels.Topics
+
+Title "GlimpseOfLean Game"
+
+Introduction "
+Welcome to the GlimpseOfLean game! This game is designed to introduce you to theorem proving in Lean.
+Click on a world to start.
 "
 
 Info "
-Here you can put additional information about the game. It is accessible
-from the starting through the drop-down menu.
-
-For example: Game version, Credits, Link to Github and Zulip, etc.
-
-Use markdown.
+This game has been developed to give you a glimpse of Lean in a couple of hours.
 "
 
 /-! Information to be displayed on the servers landing page. -/
