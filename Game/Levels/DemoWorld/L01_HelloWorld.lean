@@ -1,3 +1,4 @@
+import Game.Library.Basic
 import Game.Metadata
 
 World "DemoWorld"
