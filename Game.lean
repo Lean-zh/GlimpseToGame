@@ -1,5 +1,8 @@
-import Game.Levels.Rewriting
-import Game.Levels.Logic
+import Game.Levels.RewritingBasic
+import Game.Levels.RewritingAdvanced
+import Game.Levels.LogicImplications
+import Game.Levels.LogicForall
+import Game.Levels.LogicExists
 import Game.Levels.Analysis
 import Game.Levels.SetTheory
 import Game.Levels.Algebra
@@ -29,11 +32,14 @@ Info "
 Based on the [Glimpse of Lean](https://github.com/PatrickMassot/GlimpseOfLean) tutorial.
 "
 
-Dependency Rewriting → Logic
-Dependency Logic → Analysis
-Dependency Logic → SetTheory
-Dependency Logic → Algebra
-Dependency Logic → Probability
+Dependency RewritingBasic → RewritingAdvanced
+Dependency RewritingAdvanced → LogicImplications
+Dependency LogicImplications → LogicForall
+Dependency LogicForall → LogicExists
+Dependency LogicExists → Analysis
+Dependency LogicExists → SetTheory
+Dependency LogicExists → Algebra
+Dependency LogicExists → Probability
 
 /-! Information to be displayed on the servers landing page. -/
 Languages "en" "zh"

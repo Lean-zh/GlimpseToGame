@@ -4,7 +4,7 @@ import Mathlib.Analysis.Complex.Exponential
 
 open Real
 
-World "Rewriting"
+World "RewritingBasic"
 Level 6
 Title "Rewriting with a lemma (exp_add)"
 

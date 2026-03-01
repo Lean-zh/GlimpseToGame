@@ -1,7 +1,7 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
+World "LogicImplications"
 Level 13
 Title "a = b ↔ b - a = 0"
 

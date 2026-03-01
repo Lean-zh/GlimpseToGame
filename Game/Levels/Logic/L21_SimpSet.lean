@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 21
+World "LogicForall"
+Level 8
 Title "simp (Set)"
 
 Introduction "

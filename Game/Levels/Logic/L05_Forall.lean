@@ -1,7 +1,7 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
+World "LogicImplications"
 Level 5
 Title "Universal Quantifiers"
 

@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 15
+World "LogicForall"
+Level 2
 Title "Compressed ∀ proof"
 
 Introduction "

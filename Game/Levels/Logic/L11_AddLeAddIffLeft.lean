@@ -1,7 +1,7 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
+World "LogicImplications"
 Level 11
 Title "add_le_add_iff_left"
 

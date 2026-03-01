@@ -34,7 +34,7 @@ Statement (u : ℕ → ℝ) (l : ℝ) (h : ∀ n, u n = l) : seq_limit u l := by
   linarith
 
 NewDefinition seq_limit
-NewTactic linarith use simp
+NewTactic linarith
 
 Conclusion "
 If a sequence is constant, it tends to its value.

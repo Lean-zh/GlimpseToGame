@@ -2,7 +2,7 @@ import GameServer.Commands
 import Game.Library.Basic
 import Mathlib.Analysis.Complex.Exponential
 
-World "Rewriting"
+World "RewritingBasic"
 Level 5
 Title "Rewriting with assumptions"
 

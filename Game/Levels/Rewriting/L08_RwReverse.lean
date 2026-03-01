@@ -2,8 +2,8 @@ import GameServer.Commands
 import Game.Library.Basic
 import Mathlib.Analysis.Complex.Exponential
 
-World "Rewriting"
-Level 8
+World "RewritingAdvanced"
+Level 1
 Title "Rewriting from right to left"
 
 Introduction "

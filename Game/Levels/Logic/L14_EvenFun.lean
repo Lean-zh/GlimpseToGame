@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 14
+World "LogicForall"
+Level 1
 Title "even_fun and unfold"
 
 Introduction "

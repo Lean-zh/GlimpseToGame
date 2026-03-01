@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 18
+World "LogicForall"
+Level 5
 Title "specialize"
 
 Introduction "

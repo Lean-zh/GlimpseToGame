@@ -1,7 +1,7 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
+World "LogicImplications"
 Level 1
 Title "Using implications"
 
@@ -17,9 +17,11 @@ so the proof belows apply the \"function\" `sq_pos_of_pos` to the assumption `ha
 "
 
 Statement (a : ℝ) (ha : 0 < a) : 0 < a^2 := by
-  Hint "You can use `exact` to provide the proof term directly."
-  exact sq_pos_of_pos ha
+  Hint "You can use `exact` to provide the proof term directly, or `apply` to reduce the goal."
+  apply sq_pos_of_pos
+  exact ha
 
+NewTactic apply
 NewTheorem sq_pos_of_pos
 
 Conclusion "

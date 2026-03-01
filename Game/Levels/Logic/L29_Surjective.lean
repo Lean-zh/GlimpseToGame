@@ -2,8 +2,8 @@ import GameServer.Commands
 import Game.Library.Basic
 open Function
 
-World "Logic"
-Level 29
+World "LogicExists"
+Level 7
 Title "Surjective"
 
 Introduction "

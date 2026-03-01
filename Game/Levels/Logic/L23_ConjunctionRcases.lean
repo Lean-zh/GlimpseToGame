@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 23
+World "LogicExists"
+Level 1
 Title "Conjunction (rcases, constructor)"
 
 Introduction "

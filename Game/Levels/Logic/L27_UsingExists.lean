@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 27
+World "LogicExists"
+Level 5
 Title "Using ∃ (rcases)"
 
 Introduction "

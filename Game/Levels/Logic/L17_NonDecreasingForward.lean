@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 17
+World "LogicForall"
+Level 4
 Title "non_decreasing (forward)"
 
 Introduction "

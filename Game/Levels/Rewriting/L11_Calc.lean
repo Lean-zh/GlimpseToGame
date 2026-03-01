@@ -2,8 +2,8 @@ import GameServer.Commands
 import Game.Library.Basic
 import Mathlib.Analysis.Complex.Exponential
 
-World "Rewriting"
-Level 11
+World "RewritingAdvanced"
+Level 4
 Title "Calculation layout (calc)"
 
 Introduction "

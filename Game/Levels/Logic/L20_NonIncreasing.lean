@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 20
+World "LogicForall"
+Level 7
 Title "non_increasing (g ∘ f)"
 
 Introduction "

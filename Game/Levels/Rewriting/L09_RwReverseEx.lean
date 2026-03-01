@@ -2,8 +2,8 @@ import GameServer.Commands
 import Game.Library.Basic
 import Mathlib.Analysis.Complex.Exponential
 
-World "Rewriting"
-Level 9
+World "RewritingAdvanced"
+Level 2
 Title "Reverse rewriting exercise"
 
 Introduction "

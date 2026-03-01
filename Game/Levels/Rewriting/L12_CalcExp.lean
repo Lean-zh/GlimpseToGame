@@ -4,8 +4,8 @@ import Mathlib.Analysis.Complex.Exponential
 
 open Real
 
-World "Rewriting"
-Level 12
+World "RewritingAdvanced"
+Level 5
 Title "calc with exp"
 
 Introduction "

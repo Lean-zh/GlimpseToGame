@@ -12,6 +12,10 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 msgid "add_le_add_iff_left"
 msgstr ""
 
+#: Game.Levels.LogicForall
+msgid "Logic (2): universal quantifiers"
+msgstr ""
+
 #: Game.Levels.Analysis.L03_SqueezeTheorem
 msgid "Squeeze Theorem"
 msgstr ""
@@ -32,6 +36,10 @@ msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "intermediate goal solved! 🎉"
+msgstr ""
+
+#: Game.Levels.RewritingBasic
+msgid "Computing (1): ring & rw"
 msgstr ""
 
 #. §0: `h : P ∧ Q`
@@ -67,6 +75,17 @@ msgstr ""
 msgid "Use §0 to replace §1 in the goal with §2."
 msgstr ""
 
+#. §0: `rw [← h]`
+#. §1: `rw [...] at h`
+#. §2: `calc`
+#: Game.Levels.RewritingAdvanced
+msgid "# Computing — Part 2\n"
+"\n"
+"## Reverse rewriting and calc\n"
+"\n"
+"Learn §0 for right-to-left rewriting, §1 for rewriting in assumptions, and the §2 tactic for chain-of-equalities proofs."
+msgstr ""
+
 #. §0: `rw [← sub_nonneg]`
 #: Game.Levels.Logic.L08_EquivRw
 msgid "Start with §0 to transform the left side."
@@ -96,6 +115,12 @@ msgid "The §0 tactic simplifies goals using a set of lemmas. For sets, it knows
 "that §1 when §2."
 msgstr ""
 
+#. §0: `exact`
+#. §1: `apply`
+#: Game.Levels.Logic.L01_Implications
+msgid "You can use §0 to provide the proof term directly, or §1 to reduce the goal."
+msgstr ""
+
 #. §0: `h'`
 #: Game.Levels.Rewriting.L08_RwReverse
 msgid "Now use §0 to finish."
@@ -115,20 +140,6 @@ msgstr ""
 #. §1: `ε_pos`
 #: Game.Levels.Analysis.L01_SequenceLimit
 msgid "Start by introducing §0 and §1."
-msgstr ""
-
-#. §0: `→`
-#. §1: `↔`
-#. §2: `∀`
-#. §3: `∃`
-#. §4: `∧`
-#: Game.Levels.Logic
-msgid "# Logic\n"
-"\n"
-"## Implications and Quantifiers\n"
-"\n"
-"In this world, we will learn how to handle logical implications (§0), equivalences (§1),\n"
-"quantifiers (§2, §3) and conjunctions (§4)."
 msgstr ""
 
 #: Game
@@ -342,11 +353,6 @@ msgid "Use §0 and §1.\n"
 "right-hand side."
 msgstr ""
 
-#. §0: `exact`
-#: Game.Levels.Logic.L01_Implications
-msgid "You can use §0 to provide the proof term directly."
-msgstr ""
-
 #. §0: `apply hg`
 #. §1: `f x₁ ≤ f x₂`
 #. §2: `apply hf`
@@ -355,6 +361,22 @@ msgstr ""
 #: Game.Levels.Logic.L19_NonDecreasingBackward
 msgid "You can also use backward reasoning: §0 reduces the goal to §1,\n"
 "then §2 reduces it to §3, and §4 finishes."
+msgstr ""
+
+#. §0: `unfold`
+#. §1: `specialize`
+#. §2: `apply`
+#. §3: `simp`
+#. §4: `apply?`
+#. §5: `∀ x, P x`
+#. §6: `even_fun`
+#. §7: `non_decreasing`
+#: Game.Levels.LogicForall
+msgid "# Logic — Part 2\n"
+"\n"
+"## Universal quantifiers (∀)\n"
+"\n"
+"Learn §0, §1, §2, and §3/§4 for working with §5 and predicates like §6, §7."
 msgstr ""
 
 #: Game.Levels.Analysis.L04_Uniqueness
@@ -396,12 +418,18 @@ msgstr ""
 msgid "First rewrite §0 using §1."
 msgstr ""
 
-#: Game.Levels.Analysis.L04_Uniqueness
-msgid "Limits are unique in Hausdorff spaces (like ℝ)."
+#. §0: `ring`
+#. §1: `rw`
+#: Game.Levels.RewritingBasic
+msgid "# Computing — Part 1\n"
+"\n"
+"## ring and rw\n"
+"\n"
+"Learn the §0 tactic for algebraic identities and the §1 tactic for rewriting with equalities and lemmas."
 msgstr ""
 
-#: Game.Levels.Logic
-msgid "Logic"
+#: Game.Levels.Analysis.L04_Uniqueness
+msgid "Limits are unique in Hausdorff spaces (like ℝ)."
 msgstr ""
 
 #. §0: `ring`
@@ -481,14 +509,14 @@ msgstr ""
 msgid "Equivalences allow rewriting in both directions."
 msgstr ""
 
-#: Game.Levels.Analysis.L02_SumLimit
-msgid "Limit of Sum"
-msgstr ""
-
 #: Game.Levels.SetTheory
 msgid "# Set Theory\n"
 "\n"
 "In this world, we explore Galois connections (adjunctions) between complete lattices."
+msgstr ""
+
+#: Game.Levels.Analysis.L02_SumLimit
+msgid "Limit of Sum"
 msgstr ""
 
 #. §0: `add_le_add_iff_right`
@@ -519,6 +547,23 @@ msgstr ""
 msgid "The §0 tactic searches the library for lemmas that could solve the goal.\n"
 "It will suggest tactics — you can click the suggestion to accept it.\n"
 "Use §1 (the additive version of the theorem)."
+msgstr ""
+
+#. §0: `exact`
+#. §1: `apply`
+#. §2: `have`
+#. §3: `intro`
+#. §4: `constructor`
+#. §5: `↔`
+#. §6: `rw`
+#. §7: `.1`
+#. §8: `.2`
+#: Game.Levels.LogicImplications
+msgid "# Logic — Part 1\n"
+"\n"
+"## Implications and equivalences\n"
+"\n"
+"Learn §0, §1, §2, §3, §4, and how to use equivalences (§5) with §6 and §7/§8."
 msgstr ""
 
 #. §0: `have h2 : 0 < a^2`
@@ -593,19 +638,6 @@ msgstr ""
 #. §2: `P x₀`
 #: Game.Levels.Logic.L26_ExistsUse
 msgid "To prove §0, provide a witness with §1, then prove §2."
-msgstr ""
-
-#. §0: `ring`
-#: Game.Levels.Rewriting
-msgid "# Computing\n"
-"\n"
-"## The ring tactic\n"
-"\n"
-"One of the earliest kind of proofs one encounters while learning mathematics is proving by\n"
-"a calculation. It may not sound like a proof, but this is actually using lemmas expressing\n"
-"properties of operations on numbers. Of course we usually don't want to invoke those explicitly\n"
-"so mathlib has a tactic §0 taking care of proving equalities that follow by applying\n"
-"the properties of all commutative rings."
 msgstr ""
 
 #. §0: `rw [hf, hg]`
@@ -711,6 +743,20 @@ msgstr ""
 msgid "Reverse rewriting exercise"
 msgstr ""
 
+#. §0: `use`
+#. §1: `rcases`
+#. §2: `P ∧ Q`
+#. §3: `constructor`
+#. §4: `⟨a, b⟩`
+#. §5: `Surjective`
+#: Game.Levels.LogicExists
+msgid "# Logic — Part 3\n"
+"\n"
+"## Existentials (∃) and conjunctions (∧)\n"
+"\n"
+"Learn §0, §1, and how to prove §2 with §3 or §4. Apply these to divisibility and §5."
+msgstr ""
+
 #: Game.Levels.Logic.L29_Surjective
 msgid "Surjective"
 msgstr ""
@@ -751,6 +797,10 @@ msgstr ""
 msgid "even_fun (g ∘ f)"
 msgstr ""
 
+#: Game.Levels.RewritingAdvanced
+msgid "Computing (2): reverse rw & calc"
+msgstr ""
+
 #. §0: `calc`
 #. §1: `exp_add`
 #. §2: `exp (2*a) = (exp b)^2 * (exp c)^2`
@@ -759,12 +809,12 @@ msgstr ""
 msgid "Combine §0 with §1 to show §2 when §3."
 msgstr ""
 
-#: Game.Levels.Rewriting.L04_RwMultiple
-msgid "Multiple rewrites"
-msgstr ""
-
 #: Game.Levels.SetTheory.L01_InfSup
 msgid "The infimum is the greatest lower bound."
+msgstr ""
+
+#: Game.Levels.Rewriting.L04_RwMultiple
+msgid "Multiple rewrites"
 msgstr ""
 
 #. §0: `intro`
@@ -814,10 +864,6 @@ msgstr ""
 msgid "a = b ↔ b - a = 0"
 msgstr ""
 
-#: Game.Levels.Rewriting
-msgid "Computing"
-msgstr ""
-
 #. §0: `u n`
 #. §1: `l`
 #. §2: `h`
@@ -863,11 +909,6 @@ msgstr ""
 msgid "Use §0 to replace §1 with §2: §3."
 msgstr ""
 
-#. §0: `constructor`
-#: Game.Levels.Logic.L13_EquivSubZero
-msgid "Prove this equivalence using §0 and then each direction."
-msgstr ""
-
 #. §0: `R`
 #. §1: `S`
 #. §2: `R`
@@ -878,6 +919,11 @@ msgid "# Ring Homomorphisms\n"
 "\n"
 "Given a ring §0 and a ring §1, a ring homomorphism from §2 to §3 is written §4.\n"
 "It preserves addition, multiplication, zero, and one."
+msgstr ""
+
+#. §0: `constructor`
+#: Game.Levels.Logic.L13_EquivSubZero
+msgid "Prove this equivalence using §0 and then each direction."
 msgstr ""
 
 #. §0: `a ∣ b`
@@ -912,6 +958,10 @@ msgstr ""
 #. §0: `.2`
 #: Game.Levels.Logic.L10_EquivDotTwo
 msgid "The §0 accesses the right-to-left implication of the equivalence."
+msgstr ""
+
+#: Game.Levels.LogicImplications
+msgid "Logic (1): implications & equivalences"
 msgstr ""
 
 #. §0: `1 + 1 = 2`
@@ -980,6 +1030,10 @@ msgstr ""
 #. §0: `N`
 #: Game.Levels.Analysis.L01_SequenceLimit
 msgid "We need to provide a natural number §0. Any number will do since the sequence is constant."
+msgstr ""
+
+#: Game.Levels.LogicExists
+msgid "Logic (3): existentials & conjunctions"
 msgstr ""
 
 #. §0: `c = 2*a*d`
@@ -1258,6 +1312,12 @@ msgstr ""
 msgid "Apply the hypothesis §0 to §1."
 msgstr ""
 
+#. §0: `isInf`
+#. §1: `x₀`
+#: Game.Levels.SetTheory.L01_InfSup
+msgid "Apply the definition of §0 to §1."
+msgstr ""
+
 #. §0: `non_decreasing f`
 #. §1: `∀ x₁ x₂, x₁ ≤ x₂ → f x₁ ≤ f x₂`
 #. §2: `have step₁ : f x₁ ≤ f x₂ := hf x₁ x₂ h`
@@ -1265,12 +1325,6 @@ msgstr ""
 #: Game.Levels.Logic.L17_NonDecreasingForward
 msgid "§0 means §1.\n"
 "Use forward reasoning: first §2, then §3."
-msgstr ""
-
-#. §0: `isInf`
-#. §1: `x₀`
-#: Game.Levels.SetTheory.L01_InfSup
-msgid "Apply the definition of §0 to §1."
 msgstr ""
 
 #. §0: `h`

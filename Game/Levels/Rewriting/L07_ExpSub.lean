@@ -4,7 +4,7 @@ import Mathlib.Analysis.Complex.Exponential
 
 open Real
 
-World "Rewriting"
+World "RewritingBasic"
 Level 7
 Title "exp_sub and exp_zero"
 

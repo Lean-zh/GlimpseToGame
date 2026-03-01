@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 26
+World "LogicExists"
+Level 4
 Title "Existential (use)"
 
 Introduction "

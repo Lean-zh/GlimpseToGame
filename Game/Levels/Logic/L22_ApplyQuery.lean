@@ -3,8 +3,8 @@ import Game.Library.Basic
 import Mathlib.Topology.Order.Compact
 import Mathlib.Topology.Algebra.Ring.Real
 
-World "Logic"
-Level 22
+World "LogicForall"
+Level 9
 Title "apply?"
 
 Introduction "

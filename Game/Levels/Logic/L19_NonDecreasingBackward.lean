@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 19
+World "LogicForall"
+Level 6
 Title "Backward with apply"
 
 Introduction "
@@ -17,7 +17,6 @@ Statement (f g : ℝ → ℝ) (hf : non_decreasing f) (hg : non_decreasing g) :
   apply hf
   exact h
 
-NewTactic apply
 
 Conclusion "
 `apply` lets Lean infer the arguments via unification.

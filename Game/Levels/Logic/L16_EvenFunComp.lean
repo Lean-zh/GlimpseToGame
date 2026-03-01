@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 16
+World "LogicForall"
+Level 3
 Title "even_fun (g ∘ f)"
 
 Introduction "

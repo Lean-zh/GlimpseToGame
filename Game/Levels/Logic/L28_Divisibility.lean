@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 28
+World "LogicExists"
+Level 6
 Title "Divisibility (a ∣ b)"
 
 Introduction "

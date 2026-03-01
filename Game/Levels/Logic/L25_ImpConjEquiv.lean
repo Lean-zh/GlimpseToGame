@@ -1,8 +1,8 @@
 import GameServer.Commands
 import Game.Library.Basic
 
-World "Logic"
-Level 25
+World "LogicExists"
+Level 3
 Title "(p → (q → r)) ↔ p ∧ q → r"
 
 Introduction "
