@@ -1,0 +1,535 @@
+msgid ""
+msgstr "Project-Id-Version: Game v4.23.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-02\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: zh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#. §0: `h2`
+#: Game.Levels.Logic.L02_Forward
+msgid "Now use §0 to prove the goal."
+msgstr "现在使用 §0 来证明目标。"
+
+#: Game
+msgid "# Glimpse of Lean\n"
+"\n"
+"Welcome to this tutorial designed to give you a glimpse of Lean.\n"
+"\n"
+"This game is split into **Worlds**. Each world focuses on a specific aspect of Lean.\n"
+"\n"
+"*   **Computing**: Learn how to calculate and rewrite equalities.\n"
+"*   **Logic**: Learn how to handle logical implications and quantifiers.\n"
+"\n"
+"Start with the **Computing** world to learn the basics."
+msgstr "# Lean 初探\n"
+"\n"
+"欢迎来到本教程，它旨在让你在几小时内对 Lean 有一个初步的了解。\n"
+"\n"
+"本游戏分为多个 **世界**。每个世界都专注于 Lean 的特定方面。\n"
+"\n"
+"*   **计算**：学习如何计算和重写等式。\n"
+"*   **逻辑**：学习如何处理逻辑蕴含和量词。\n"
+"\n"
+"请从 **计算** 世界开始学习基础知识。"
+
+#: GameServer.RpcHandlers
+msgid "intermediate goal solved! 🎉"
+msgstr "中间目标已解决！🎉"
+
+#. §0: `exact`
+#: Game.Levels.Logic.L01_Implications
+msgid "You can use §0 to provide the proof term directly."
+msgstr "你可以使用 §0 直接提供证明项。"
+
+#: Game.Levels.Rewriting.L06_RwReverse
+msgid "Rewriting from right to left"
+msgstr "从右向左重写"
+
+#: Game.Levels.Rewriting.L04_RwMultiple
+msgid "Good job! You can combine rewrites."
+msgstr "干得好！你可以组合重写。"
+
+#: Game.Levels.Logic.L01_Implications
+msgid "Using implications"
+msgstr "使用蕴含"
+
+#: Game
+msgid "Glimpse to Game"
+msgstr "Lean 初探游戏"
+
+#. §0: `ring`
+#. §1: `:=`
+#. §2: `by`
+#: Game.Levels.Rewriting.L07_Calc
+msgid "What is written in the above example is very far away from what we would write on\n"
+"paper. Let's now see how to get a more natural layout (and also return to using §0\n"
+"instead of explicit lemma invocations).\n"
+"After each §1 below, the goal is to prove equality with the preceding line\n"
+"(or the left-hand on the first line).\n"
+"Carefully check you understand this by putting your cursor after each §2 and looking\n"
+"at the tactic state."
+msgstr "上面的例子与我们在纸上书写的形式相去甚远。现在让我们看看如何获得更自然的布局（并重新使用 §0\n"
+"而不是显式引理调用）。\n"
+"在下面的每个 §1 之后，目标是证明与前一行（或第一行的左侧）相等。\n"
+"通过将光标放在每个 §2 之后并查看策略状态，仔细检查你是否理解了这一点。"
+
+#. §0: `have`
+#. §1: `have my_name : my_statement := by`
+#. §2: `my_name`
+#. §3: `exact`
+#. §4: `by`
+#. §5: `exact`
+#. §6: `exact`
+#. §7: `:=`
+#: Game.Levels.Logic.L02_Forward
+msgid "You can also give a proof with forward reasoning, using the §0 tactic.\n"
+"In order to announce an intermediate statement we use:\n"
+"\n"
+"§1\n"
+"\n"
+"and then increase the indentation level.\n"
+"This triggers the apparition of a new goal: proving the statement.\n"
+"After the proof is done, the statement becomes available under the name §2.\n"
+"If the proof is a single §3 tactic then you can get rid\n"
+"of §4 and §5 and directly put the argument of §6 after the §7."
+msgstr "你也可以使用 §0 策略进行前向推理来给出证明。\n"
+"为了声明一个中间陈述，我们使用：\n"
+"\n"
+"§1\n"
+"\n"
+"然后增加缩进级别。\n"
+"这将触发一个新目标的出现：证明该陈述。\n"
+"证明完成后，该陈述将以名称 §2 可用。\n"
+"如果证明只是一个 §3 策略，那么你可以去掉\n"
+"§4 和 §5，直接将 §6 的参数放在 §7 之后。"
+
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
+msgstr "关卡已完成，但有警告… 🎭"
+
+#. §0: `exp`
+#: Game.Levels.Rewriting.L05_RwLemma
+msgid "Correct! You used lemmas about §0 to rewrite the goal."
+msgstr "正确！你使用了关于 §0 的引理来重写目标。"
+
+#. §0: `ring`
+#: Game.Levels.Rewriting.L02_Expansion
+msgid "Correct! §0 handles expansions too."
+msgstr "正确！§0 也可以处理展开。"
+
+#: Game.Levels.Logic
+msgid "Logic"
+msgstr "逻辑"
+
+#. §0: `ring`
+#: Game.Levels.Rewriting.L03_RwBasic
+msgid "Now finish with §0."
+msgstr "现在用 §0 完成。"
+
+#. §0: `ring`
+#: Game.Levels.Rewriting.L01_Associativity
+msgid "Great! The §0 tactic handles basic algebraic identities."
+msgstr "太棒了！§0 策略可以处理基本的代数恒等式。"
+
+#: Game.Levels.Logic.L02_Forward
+msgid "Forward Reasoning"
+msgstr "前向推理"
+
+#. §0: `b`
+#. §1: `«{h'}»`
+#: Game.Levels.Rewriting.L03_RwBasic
+msgid "Note the goal changed. Now rewrite §0 using §1."
+msgstr "注意目标改变了。现在使用 §1 重写 §0。"
+
+#. §0: `intro`
+#. §1: `a > 0 → (a^2)^2 > 0`
+#: Game.Levels.Logic.L03_ProvingImplications
+msgid "In order to prove an implication, we need to assume the premise and prove the conclusion.\n"
+"This is done using the §0 tactic. Secretly the exercise above was proving the\n"
+"implication §1 but the premise was already introduced for us."
+msgstr "为了证明一个蕴含，我们需要假设前提并证明结论。\n"
+"这是使用 §0 策略完成的。实际上，上面的练习是在证明\n"
+"蕴含 §1，但前提已经为我们引入了。"
+
+#. §0: `P ⇒ Q`
+#. §1: `P`
+#. §2: `Q`
+#. §3: `→`
+#. §4: `⇒`
+#. §5: `a`
+#. §6: `sq_pos_of_pos`
+#. §7: `0 < a → 0 < a^2`
+#. §8: `sq_pos_of_pos`
+#. §9: `ha`
+#: Game.Levels.Logic.L01_Implications
+msgid "# Implications\n"
+"\n"
+"In Lean, the inhabitants of a proposition are precisely the proofs of that proposition.\n"
+"Proving an implication §0 amounts to producing a function that turns proofs of §1\n"
+"into proofs of §2. Therefore, Lean denotes implication by the symbol §3 instead of §4.\n"
+"\n"
+"For instance, given a real number §5, the lemma §6 claims §7\n"
+"so the proof belows apply the \"function\" §8 to the assumption §9."
+msgstr "# 蕴含\n"
+"\n"
+"在 Lean 中，命题的居民正是该命题的证明。\n"
+"证明蕴含 §0 相当于产生一个函数，将 §1 的证明转换为 §2 的证明。因此，Lean 用符号 §3 而不是 §4 来表示蕴含。\n"
+"\n"
+"例如，给定一个实数 §5，引理 §6 声称 §7\n"
+"所以下面的证明将“函数” §8 应用于假设 §9。"
+
+#. §0: `rw`
+#. §1: `b + c + e = d + c`
+#. §2: `a + e = d + c`
+#. §3: `h`
+#. §4: `a = b + c`
+#. §5: `b + c + e = d + c`
+#. §6: `rw`
+#: Game.Levels.Rewriting.L03_RwBasic
+msgid "Note the §0 tactic changes the current goal. After the first line of the above proof,\n"
+"the new goal is §1. So you can read this first proof step as saying:\n"
+"\"I wanted to prove, §2 but, since assumption §3 tells me §4,\n"
+"it suffices to prove §5.\"\n"
+"\n"
+"The §6 tactic needs to be told every rewrite step. Later on we will see more powerful tactics\n"
+"that can automate the tedious steps for you."
+msgstr "注意 §0 策略改变了当前目标。在上述证明的第一行之后，\n"
+"新目标是 §1。所以你可以将这第一步证明理解为：\n"
+"“我想证明 §2，但是，因为假设 §3 告诉我 §4，\n"
+"所以只需证明 §5。”\n"
+"\n"
+"§6 策略需要被告知每一个重写步骤。稍后我们将看到更强大的策略，\n"
+"可以为你自动完成这些繁琐的步骤。"
+
+#: Game
+msgid "Based on the [Glimpse of Lean](https://github.com/PatrickMassot/GlimpseOfLean) tutorial."
+msgstr "基于 [Glimpse of Lean](https://github.com/PatrickMassot/GlimpseOfLean) 教程。"
+
+#. §0: `←`
+#. §1: `rw [← h]`
+#. §2: `b + c`
+#. §3: `a`
+#: Game.Levels.Rewriting.L06_RwReverse
+msgid "Since equality is a symmetric relation, we can also replace the right-hand side of an\n"
+"equality by the left-hand side using §0 as in the following example.\n"
+"\n"
+"Whenever you see in a Lean file a symbol that you don't see on your keyboard, such as ←,\n"
+"you can put your mouse cursor above it and learn from a tooltip how to type it.\n"
+"In the case of ←, you can type it by typing \"\\\\l \", so backslash-l-space.\n"
+"\n"
+"Note this rewriting from right to left story is all about sides in the equality you want to\n"
+"*use*, not about sides in what you want to *prove*. The §1 in the previous example\n"
+"replaced the right-hand side by the left-hand side, so it looked for §2 in the current\n"
+"goal and replaced it with §3."
+msgstr "由于等号是对称关系，我们也可以像下面的例子一样，使用 §0 将等号的右边替换为左边。\n"
+"\n"
+"每当你在 Lean 文件中看到键盘上没有的符号（如 ←）时，\n"
+"你可以将鼠标光标放在它上面，通过提示了解如何输入它。\n"
+"对于 ←，你可以输入 \"\\\\l \"，即反斜杠-l-空格。\n"
+"\n"
+"注意，这个从右向左重写的故事完全是关于你想要 *使用* 的等式的两边，而不是关于你想要 *证明* 的两边。上例中的 §1\n"
+"将右边替换为左边，所以它在当前目标中寻找 §2 并将其替换为 §3。"
+
+#. §0: `a`
+#. §1: `«{h}»`
+#: Game.Levels.Rewriting.L03_RwBasic
+msgid "Start by rewriting §0 using §1."
+msgstr "首先使用 §1 重写 §0。"
+
+#: Game
+msgid "Game Template"
+msgstr "游戏模板"
+
+#. §0: `ring`
+#. §1: `exp_add x y`
+#. §2: `exp(x+y) = exp(x) * exp(y)`
+#. §3: `exp_sub x y`
+#. §4: `exp(x-y) = exp(x) / exp(y)`
+#. §5: `exp_zero`
+#. §6: `exp 0 = 1`
+#. §7: `a + b - c`
+#. §8: `(a + b) - c`
+#. §9: `ring`
+#. §10: `mul_one x : x * 1 = x`
+#: Game.Levels.Rewriting.L05_RwLemma
+msgid "In the previous examples, we rewrote the goal using a local assumption. But we can\n"
+"also use lemmas. For instance let us prove a lemma about exponentiation.\n"
+"Since §0 only knows how to prove things from the axioms of rings,\n"
+"it doesn't know how to work with exponentiation.\n"
+"\n"
+"§1 is a proof that §2.\n"
+"§3 is §4.\n"
+"§5 is §6.\n"
+"\n"
+"Recall that §7 means §8.\n"
+"\n"
+"You can either use §9 or rewrite with §10 to simplify the denominator on the\n"
+"right-hand side."
+msgstr "在前面的例子中，我们使用局部假设重写了目标。但我们也可以使用引理。\n"
+"例如，让我们证明一个关于幂运算的引理。\n"
+"因为 §0 只知道如何从环公理证明事物，\n"
+"它不知道如何处理幂运算。\n"
+"\n"
+"§1 是 §2 的证明。\n"
+"§3 是 §4。\n"
+"§5 是 §6。\n"
+"\n"
+"回想一下，§7 意味着 §8。\n"
+"\n"
+"你可以使用 §9 或用 §10 重写来简化右边的分母。"
+
+#: Game.Levels.Rewriting.L07_Calc
+msgid "Calculation layout using calc"
+msgstr "使用 calc 进行计算布局"
+
+#. §0: `rw`
+#: Game.Levels.Rewriting.L03_RwBasic
+msgid "Let us now see how to compute using assumptions relating the involved numbers.\n"
+"This uses the fundamental property of equality: if two\n"
+"mathematical objects A and B are equal then, in any statement involving A, one can replace A\n"
+"by B. This operation is called rewriting, and the basic Lean tactic for this is §0.\n"
+"Carefully step through the proof below and try to understand what is happening."
+msgstr "现在让我们看看如何使用涉及相关数字的假设进行计算。\n"
+"这利用了等式的基本性质：如果两个数学对象 A 和 B 相等，那么在任何涉及 A 的陈述中，都可以用 B 替换 A。\n"
+"这种操作称为重写，Lean 中用于此操作的基本策略是 §0。\n"
+"仔细逐步阅读下面的证明，尝试理解发生了什么。"
+
+#: Game.Levels.Rewriting.L03_RwBasic
+msgid "The rewriting tactic"
+msgstr "重写策略"
+
+#. §0: `«{h'}»`
+#. §1: `c`
+#. §2: `b`
+#: Game.Levels.Rewriting.L06_RwReverse
+#: Game.Levels.Rewriting.L06_RwReverse
+#: Game.Levels.Rewriting.L06_RwReverse
+msgid "Use §0 to replace §1 with §2."
+msgstr "使用 §0 将 §1 替换为 §2。"
+
+#: Game.Levels.Rewriting.L04_RwMultiple
+msgid "Multiple rewrites"
+msgstr "多次重写"
+
+#: GameServer.RpcHandlers
+msgid "level completed! 🎉"
+msgstr "关卡完成！🎉"
+
+#. §0: `→`
+#. §1: `↔`
+#. §2: `∀`
+#. §3: `∃`
+#: Game.Levels.Logic
+msgid "# Logic\n"
+"\n"
+"## Implications and Quantifiers\n"
+"\n"
+"In this world, we will learn how to handle logical implications (§0), equivalences (§1),\n"
+"and quantifiers (§2, §3)."
+msgstr "# 逻辑\n"
+"\n"
+"## 蕴含与量词\n"
+"\n"
+"在这个世界中，我们将学习如何处理逻辑蕴含 (§0)、等价 (§1) 和量词 (§2, §3)。"
+
+#. §0: `ring`
+#: Game.Levels.Rewriting.L02_Expansion
+msgid "Use §0 to prove algebraic identities."
+msgstr "使用 §0 来证明代数恒等式。"
+
+#. §0: `intro`
+#: Game.Levels.Logic.L03_ProvingImplications
+msgid "Note that, when using §0, you need to give a name to the assumption.\n"
+"Lean will let you use a name that was already used, but the safe\n"
+"thing to do by default is to use a new name."
+msgstr "注意，当使用 §0 时，你需要给假设一个名字。\n"
+"Lean 允许你使用已经使用过的名字，但默认情况下，\n"
+"为了安全起见，最好使用一个新名字。"
+
+#. §0: `ring`
+#. §1: `ring`
+#. §2: `a*b*c`
+#. §3: `(a*b)*c`
+#. §4: `a*(b*c)`
+#. §5: `ring`
+#: Game.Levels.Rewriting.L02_Expansion
+msgid "It's your turn, replace the word sorry below by a proof. In this case the proof is just §0.\n"
+"After you prove something, you will see a small \"No goals\" message, which is the indication that\n"
+"your proof is finished.\n"
+"\n"
+"In the previous example, take a closer look at where Lean displays parentheses.\n"
+"The §1 tactic certainly knows about associativity of multiplication, but sometimes\n"
+"it is useful to understand that binary operation really are binary and an expression like\n"
+"§2 is read as §3 by Lean and the fact that this is equal to §4 is a\n"
+"lemma that is used by the §5 tactic when needed."
+msgstr "轮到你了，将下面的 sorry 替换为证明。在这种情况下，证明就是 §0。\n"
+"在你证明了一些东西之后，你会看到一条小小的“无目标”消息，这表明你的证明完成了。\n"
+"\n"
+"在前面的例子中，仔细看看 Lean 在哪里显示括号。\n"
+"§1 策略当然知道乘法的结合律，但有时理解二元运算确实是二元的很有用，\n"
+"像 §2 这样的表达式被 Lean 读作 §3，而它等于 §4 这一事实是 §5 策略在需要时使用的引理。"
+
+#: Game.Levels.Logic.L03_ProvingImplications
+msgid "Proving Implications"
+msgstr "证明蕴含"
+
+#. §0: `exp (a + b)`
+#. §1: `exp_add`
+#: Game.Levels.Rewriting.L05_RwLemma
+msgid "Now expand §0 using §1."
+msgstr "现在使用 §1 展开 §0。"
+
+#. §0: `intro`
+#. §1: `ha`
+#. §2: `a > 0`
+#. §3: `hb`
+#. §4: `b > 0`
+#: Game.Levels.Logic.L03_ProvingImplications
+msgid "Use §0 to bring the assumptions §1 (for §2) and §3 (for §4) into the context."
+msgstr "使用 §0 将假设 §1（对应 §2）和 §3（对应 §4）引入上下文中。"
+
+#. §0: `rw [h, h']`
+#. §1: `h`
+#. §2: `h'`
+#. §3: `ring`
+#. §4: `h`
+#. §5: `h'`
+#: Game.Levels.Rewriting.L04_RwMultiple
+msgid "One can actually do several rewritings in one command.\n"
+"§0 rewrites §1 then §2.\n"
+"\n"
+"Now try it yourself. Note that §3 can still do calculations,\n"
+"but it doesn't use the assumptions §4 and §5."
+msgstr "实际上可以在一条命令中进行多次重写。\n"
+"§0 先重写 §1，然后重写 §2。\n"
+"\n"
+"现在你自己试试。注意 §3 仍然可以进行计算，\n"
+"但它不使用假设 §4 和 §5。"
+
+#. §0: `ring`
+#. §1: `mul_one`
+#: Game.Levels.Rewriting.L05_RwLemma
+msgid "Now verify the equality with §0 or §1."
+msgstr "现在用 §0 或 §1 验证等式。"
+
+#. §0: `have h2 : 0 < a^2`
+#: Game.Levels.Logic.L02_Forward
+msgid "Start by declaring §0."
+msgstr "首先声明 §0。"
+
+#: Game.Levels.Logic.L02_Forward
+msgid "Forward reasoning allows you to build up intermediate facts to reach your goal."
+msgstr "前向推理允许你建立中间事实来达成目标。"
+
+#. §0: `ring`
+#: Game.Levels.Rewriting.L04_RwMultiple
+msgid "Now verify the equality with §0."
+msgstr "现在用 §0 验证等式。"
+
+#: Game.Levels.Rewriting
+msgid "Computing"
+msgstr "计算"
+
+#: Game.Levels.Rewriting.L02_Expansion
+msgid "Expansion"
+msgstr "展开"
+
+#. §0: `ring`
+#. §1: `rw`
+#. §2: `exact`
+#. §3: `calc`
+#: Game.Levels.Rewriting.L07_Calc
+msgid "Congratulations, this is the end of your first exercise file! You've seen what typing\n"
+"a Lean proof looks like and have learned about the following tactics:\n"
+"* §0\n"
+"* §1\n"
+"* §2\n"
+"* §3"
+msgstr "恭喜，这是你第一个练习文件的结束！你已经看到了输入 Lean 证明是什么样子的，\n"
+"并学习了以下策略：\n"
+"* §0\n"
+"* §1\n"
+"* §2\n"
+"* §3"
+
+#: Game.Levels.Rewriting.L05_RwLemma
+msgid "Rewriting with a lemma"
+msgstr "使用引理重写"
+
+#. §0: `add_pos`
+#: Game.Levels.Logic.L03_ProvingImplications
+msgid "Now use §0 with your new assumptions."
+msgstr "现在使用 §0 和你的新假设。"
+
+#: Game
+msgid "You should use this game as a template for your own game and add your own levels."
+msgstr "你应该使用此游戏作为你自己游戏的模板，并添加你自己的关卡。"
+
+#. §0: `0 < a`
+#: Game.Levels.Logic.L01_Implications
+msgid "The above proof is a direct proof: we already know §0 and we feed this fact into the\n"
+"implication."
+msgstr "上面的证明是直接证明：我们已经知道 §0，我们将这个事实输入到蕴含中。"
+
+#. §0: `ring`
+#: Game.Levels.Rewriting
+msgid "# Computing\n"
+"\n"
+"## The ring tactic\n"
+"\n"
+"One of the earliest kind of proofs one encounters while learning mathematics is proving by\n"
+"a calculation. It may not sound like a proof, but this is actually using lemmas expressing\n"
+"properties of operations on numbers. Of course we usually don't want to invoke those explicitly\n"
+"so mathlib has a tactic §0 taking care of proving equalities that follow by applying\n"
+"the properties of all commutative rings."
+msgstr "# 计算\n"
+"\n"
+"## ring 策略\n"
+"\n"
+"学习数学时最早遇到的证明之一是通过计算进行证明。这听起来可能不像证明，但实际上这是在使用表达数运算性质的引理。当然，我们通常不想显式调用这些引理，所以 mathlib 有一个策略 §0，它负责通过应用所有交换环的性质来证明等式。"
+
+#. §0: `«{h}»`
+#. §1: `«{h'}»`
+#. §2: `rw [«{h}», «{h'}»]`
+#: Game.Levels.Rewriting.L04_RwMultiple
+msgid "Try rewriting both §0 and §1. You can do it in one command §2 or two."
+msgstr "尝试重写 §0 和 §1。你可以在一个命令 §2 中完成，也可以分两次完成。"
+
+#. §0: `exp (a + b - c)`
+#. §1: `exp_sub`
+#: Game.Levels.Rewriting.L05_RwLemma
+msgid "Start by expanding §0 using §1."
+msgstr "首先使用 §1 展开 §0。"
+
+#. §0: `exp 0`
+#. §1: `exp_zero`
+#: Game.Levels.Rewriting.L05_RwLemma
+msgid "Simplify §0 using §1."
+msgstr "使用 §1 简化 §0。"
+
+#. §0: `ring`
+#: Game.Levels.Rewriting.L01_Associativity
+msgid "One of the earliest kind of proofs one encounters while learning mathematics is proving by\n"
+"a calculation. It may not sound like a proof, but this is actually using lemmas expressing\n"
+"properties of operations on numbers. Of course we usually don't want to invoke those explicitly\n"
+"so mathlib has a tactic §0 taking care of proving equalities that follow by applying\n"
+"the properties of all commutative rings."
+msgstr "学习数学时最早遇到的证明之一是通过计算进行证明。这听起来可能不像证明，但实际上这是在使用表达数运算性质的引理。当然，我们通常不想显式调用这些引理，所以 mathlib 有一个策略 §0，它负责通过应用所有交换环的性质来证明等式。"
+
+#. §0: `0 < a^2`
+#. §1: `sq_pos_of_pos`
+#. §2: `ha`
+#: Game.Levels.Logic.L02_Forward
+msgid "Now prove §0 using §1 and §2."
+msgstr "现在使用 §1 和 §2 证明 §0。"
+
+#: Game.Levels.Rewriting.L06_RwReverse
+msgid "Correct! You used reverse rewriting."
+msgstr "正确！你使用了反向重写。"
+
+#: Game.Levels.Rewriting.L01_Associativity
+msgid "The ring tactic"
+msgstr "ring 策略"
