@@ -45,6 +45,11 @@ lemma abs_sub_le' {α : Type*} [AddCommGroup α] [LinearOrder α] [IsOrderedAddM
     |a - c| ≤ |a - b| + |c - b| :=
   abs_sub_comm c b ▸ abs_sub_le _ _ _
 
+-- Definitions for Logic world (from GlimpseOfLean 03Forall)
+def even_fun (f : ℝ → ℝ) := ∀ x, f (-x) = f x
+def non_decreasing (f : ℝ → ℝ) := ∀ x₁ x₂, x₁ ≤ x₂ → f x₁ ≤ f x₂
+def non_increasing (f : ℝ → ℝ) := ∀ x₁ x₂, x₁ ≤ x₂ → f x₁ ≥ f x₂
+
 open BigOperators
 
 lemma Finset.sum_univ_eq_single {β : Type u} {α : Type v} [Fintype α] [AddCommMonoid β]

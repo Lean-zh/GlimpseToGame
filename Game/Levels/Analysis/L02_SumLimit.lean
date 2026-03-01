@@ -29,7 +29,6 @@ Statement (u v : ℕ → ℝ) (l l' : ℝ) (hu : seq_limit u l) (hv : seq_limit 
     _ ≤ ε                                             := by linarith
 
 NewTheorem abs_add_le ge_max_iff
-NewTactic rcases
 
 Conclusion "
 Great! You proved that the limit of a sum is the sum of the limits.

@@ -1,6 +1,9 @@
 import Game.Levels.Rewriting
 import Game.Levels.Logic
 import Game.Levels.Analysis
+import Game.Levels.SetTheory
+import Game.Levels.Algebra
+import Game.Levels.Probability
 
 -- Here's what we'll put on the title screen
 Title "Glimpse to Game"
@@ -15,6 +18,9 @@ This game is split into **Worlds**. Each world focuses on a specific aspect of L
 *   **Computing**: Learn how to calculate and rewrite equalities.
 *   **Logic**: Learn how to handle logical implications and quantifiers.
 *   **Analysis**: Learn how to handle limits of sequences.
+*   **Set Theory**: Explore Galois connections and lattices.
+*   **Algebra**: Explore rings, homomorphisms, and ideals.
+*   **Probability**: Explore probability measures and independence.
 
 Start with the **Computing** world to learn the basics.
 "
@@ -25,6 +31,9 @@ Based on the [Glimpse of Lean](https://github.com/PatrickMassot/GlimpseOfLean) t
 
 Dependency Rewriting → Logic
 Dependency Logic → Analysis
+Dependency Logic → SetTheory
+Dependency Logic → Algebra
+Dependency Logic → Probability
 
 /-! Information to be displayed on the servers landing page. -/
 Languages "en" "zh"

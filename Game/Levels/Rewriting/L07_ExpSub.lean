@@ -5,18 +5,11 @@ import Mathlib.Analysis.Complex.Exponential
 open Real
 
 World "Rewriting"
-Level 5
-Title "Rewriting with a lemma"
+Level 7
+Title "exp_sub and exp_zero"
 
 Introduction "
-In the previous examples, we rewrote the goal using a local assumption. But we can
-also use lemmas. For instance let us prove a lemma about exponentiation.
-Since `ring` only knows how to prove things from the axioms of rings,
-it doesn't know how to work with exponentiation.
-
-`exp_add x y` is a proof that `exp(x+y) = exp(x) * exp(y)`.
-`exp_sub x y` is `exp(x-y) = exp(x) / exp(y)`.
-`exp_zero` is `exp 0 = 1`.
+Use `exp_sub x y : exp(x-y) = exp(x) / exp(y)` and `exp_zero : exp 0 = 1`.
 
 Recall that `a + b - c` means `(a + b) - c`.
 
@@ -34,7 +27,7 @@ Statement (a b c : ℝ) : exp (a + b - c) = (exp a * exp b) / (exp c * exp 0) :=
   Hint "Now verify the equality with `ring` or `mul_one`."
   ring
 
-NewTheorem Real.exp_add Real.exp_sub Real.exp_zero
+NewTheorem Real.exp_sub Real.exp_zero
 
 Conclusion "
 Correct! You used lemmas about `exp` to rewrite the goal.

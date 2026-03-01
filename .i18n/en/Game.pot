@@ -8,115 +8,79 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
+#: Game.Levels.Rewriting.L04_RwMultiple
+msgid "Good job! You can combine rewrites in one command."
+msgstr ""
+
 #. §0: `h2`
 #: Game.Levels.Logic.L02_Forward
 msgid "Now use §0 to prove the goal."
 msgstr ""
 
-#. §0: `N`
-#: Game.Levels.Analysis.L01_SequenceLimit
-msgid "We need to provide a natural number §0. Any number will do since the sequence is constant."
+#: Game.Levels.Analysis.L03_SqueezeTheorem
+msgid "Squeeze Theorem"
+msgstr ""
+
+#: Game.Levels.SetTheory
+msgid "Set Theory"
 msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#. §0: `exact`
-#: Game.Levels.Logic.L01_Implications
-msgid "You can use §0 to provide the proof term directly."
-msgstr ""
-
-#: Game.Levels.Rewriting.L06_RwReverse
+#: Game.Levels.Rewriting.L08_RwReverse
 msgid "Rewriting from right to left"
 msgstr ""
 
-#. §0: `linarith`
-#. §1: `exact`
-#. §2: `0 ≤ ε`
-#: Game.Levels.Analysis.L01_SequenceLimit
-msgid "Finally, use §0 or §1 to prove §2."
+#. §0: `a = c - b`
+#. §1: `a + b = c`
+#: Game.Levels.Logic.L04_Equivalences
+msgid "Second direction: assume §0, prove §1."
 msgstr ""
 
-#: Game
-msgid "# Glimpse of Lean\n"
-"\n"
-"Welcome to this tutorial designed to give you a glimpse of Lean.\n"
-"\n"
-"This game is split into **Worlds**. Each world focuses on a specific aspect of Lean.\n"
-"\n"
-"*   **Computing**: Learn how to calculate and rewrite equalities.\n"
-"*   **Logic**: Learn how to handle logical implications and quantifiers.\n"
-"*   **Analysis**: Learn how to handle limits of sequences.\n"
-"\n"
-"Start with the **Computing** world to learn the basics."
+#. §0: `ring`
+#. §1: `h`
+#. §2: `h'`
+#: Game.Levels.Rewriting.L05_RwAssumptions
+msgid "Now try it yourself. Note that §0 can still do calculations,\n"
+"but it doesn't use the assumptions §1 and §2 automatically — you need to rewrite first."
 msgstr ""
 
-#: Game.Levels.Rewriting.L04_RwMultiple
-msgid "Good job! You can combine rewrites."
-msgstr ""
-
-#: Game.Levels.Logic.L01_Implications
-msgid "Using implications"
-msgstr ""
-
-#. §0: `u`
-#. §1: `l`
-#. §2: `v`
-#. §3: `l'`
-#. §4: `u+v`
-#. §5: `l+l'`
-#. §6: `rcases`
-#. §7: `N`
-#: Game.Levels.Analysis.L02_SumLimit
-msgid "If §0 tends to §1 and §2 tends §3 then §4 tends to §5.\n"
-"You will need to use §6 to extract §7 from the limit definitions."
+#. §0: `rw [← h]`
+#. §1: `b + c`
+#. §2: `a`
+#: Game.Levels.Rewriting.L08_RwReverse
+msgid "Use §0 to replace §1 in the goal with §2."
 msgstr ""
 
 #: Game
 msgid "Glimpse to Game"
 msgstr ""
 
-#. §0: `ring`
-#. §1: `:=`
-#. §2: `by`
-#: Game.Levels.Rewriting.L07_Calc
-msgid "What is written in the above example is very far away from what we would write on\n"
-"paper. Let's now see how to get a more natural layout (and also return to using §0\n"
-"instead of explicit lemma invocations).\n"
-"After each §1 below, the goal is to prove equality with the preceding line\n"
-"(or the left-hand on the first line).\n"
-"Carefully check you understand this by putting your cursor after each §2 and looking\n"
-"at the tactic state."
-msgstr ""
-
-#. §0: `have`
-#. §1: `have my_name : my_statement := by`
-#. §2: `my_name`
-#. §3: `exact`
-#. §4: `by`
-#. §5: `exact`
-#. §6: `exact`
-#. §7: `:=`
-#: Game.Levels.Logic.L02_Forward
-msgid "You can also give a proof with forward reasoning, using the §0 tactic.\n"
-"In order to announce an intermediate statement we use:\n"
+#. §0: `u n ≤ v n ≤ w n`
+#. §1: `u`
+#. §2: `w`
+#. §3: `l`
+#. §4: `v`
+#. §5: `l`
+#: Game.Levels.Analysis.L03_SqueezeTheorem
+msgid "# Squeeze Theorem\n"
 "\n"
-"§1\n"
-"\n"
-"and then increase the indentation level.\n"
-"This triggers the apparition of a new goal: proving the statement.\n"
-"After the proof is done, the statement becomes available under the name §2.\n"
-"If the proof is a single §3 tactic then you can get rid\n"
-"of §4 and §5 and directly put the argument of §6 after the §7."
+"If §0 and §1 and §2 both tend to §3, then §4 also tends to §5."
 msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "level completed with warnings… 🎭"
 msgstr ""
 
+#. §0: `h'`
+#: Game.Levels.Rewriting.L08_RwReverse
+msgid "Now use §0 to finish."
+msgstr ""
+
 #. §0: `exp`
-#: Game.Levels.Rewriting.L05_RwLemma
+#: Game.Levels.Rewriting.L07_ExpSub
 msgid "Correct! You used lemmas about §0 to rewrite the goal."
 msgstr ""
 
@@ -131,32 +95,39 @@ msgstr ""
 msgid "Start by introducing §0 and §1."
 msgstr ""
 
-#: Game.Levels.Logic
-msgid "Logic"
+#: Game.Levels.Rewriting.L09_RwReverseEx
+msgid "Reverse rewriting exercise"
 msgstr ""
 
-#. §0: `ring`
-#: Game.Levels.Rewriting.L03_RwBasic
-msgid "Now finish with §0."
+#. §0: `→`
+#. §1: `↔`
+#. §2: `∀`
+#. §3: `∃`
+#. §4: `∧`
+#: Game.Levels.Logic
+msgid "# Logic\n"
+"\n"
+"## Implications and Quantifiers\n"
+"\n"
+"In this world, we will learn how to handle logical implications (§0), equivalences (§1),\n"
+"quantifiers (§2, §3) and conjunctions (§4)."
 msgstr ""
 
 #: Game
 msgid "Glimpse of Lean tutorial gamified"
 msgstr ""
 
-#. §0: `ring`
-#: Game.Levels.Rewriting.L01_Associativity
-msgid "Great! The §0 tactic handles basic algebraic identities."
-msgstr ""
-
 #: Game.Levels.Logic.L02_Forward
 msgid "Forward Reasoning"
 msgstr ""
 
-#. §0: `b`
-#. §1: `«{h'}»`
-#: Game.Levels.Rewriting.L03_RwBasic
-msgid "Note the goal changed. Now rewrite §0 using §1."
+#. §0: `rw [h'] at h`
+#. §1: `h`
+#. §2: `h'`
+#. §3: `exact`
+#: Game.Levels.Rewriting.L10_RwAtExact
+msgid "We can rewrite inside an assumption using §0, which replaces in assumption §1 according to §2.\n"
+"The §3 tactic closes the goal when you have an assumption that is exactly the goal."
 msgstr ""
 
 #. §0: `intro`
@@ -165,27 +136,6 @@ msgstr ""
 msgid "In order to prove an implication, we need to assume the premise and prove the conclusion.\n"
 "This is done using the §0 tactic. Secretly the exercise above was proving the\n"
 "implication §1 but the premise was already introduced for us."
-msgstr ""
-
-#. §0: `P ⇒ Q`
-#. §1: `P`
-#. §2: `Q`
-#. §3: `→`
-#. §4: `⇒`
-#. §5: `a`
-#. §6: `sq_pos_of_pos`
-#. §7: `0 < a → 0 < a^2`
-#. §8: `sq_pos_of_pos`
-#. §9: `ha`
-#: Game.Levels.Logic.L01_Implications
-msgid "# Implications\n"
-"\n"
-"In Lean, the inhabitants of a proposition are precisely the proofs of that proposition.\n"
-"Proving an implication §0 amounts to producing a function that turns proofs of §1\n"
-"into proofs of §2. Therefore, Lean denotes implication by the symbol §3 instead of §4.\n"
-"\n"
-"For instance, given a real number §5, the lemma §6 claims §7\n"
-"so the proof belows apply the \"function\" §8 to the assumption §9."
 msgstr ""
 
 #. §0: `rw`
@@ -205,37 +155,31 @@ msgid "Note the §0 tactic changes the current goal. After the first line of the
 "that can automate the tedious steps for you."
 msgstr ""
 
-#. §0: `|l - l|`
-#: Game.Levels.Analysis.L01_SequenceLimit
-msgid "Simplify §0."
+#: Game.Levels.Logic.L05_Forall
+msgid "Universal quantifiers allow us to state properties that hold for all elements of a type."
 msgstr ""
 
-#. §0: `n`
-#. §1: `hn`
-#: Game.Levels.Analysis.L01_SequenceLimit
-msgid "Now introduce §0 and §1."
+#. §0: `∃ x, P x`
+#. §1: `w`
+#. §2: `P w`
+#. §3: `use`
+#. §4: `h : ∃ x, P x`
+#. §5: `rcases h with ⟨x, hx⟩`
+#: Game.Levels.Logic.L06_Exists
+msgid "# Existential Quantifiers\n"
+"\n"
+"To prove a goal of the form §0, you need to provide a witness §1 such that §2 holds.\n"
+"This is done using the §3 tactic.\n"
+"To use an assumption §4, you can decompose it using §5."
 msgstr ""
 
-#: Game
-msgid "Based on the [Glimpse of Lean](https://github.com/PatrickMassot/GlimpseOfLean) tutorial."
+#: Game.Levels.Analysis.L03_SqueezeTheorem
+msgid "The Squeeze Theorem is a fundamental tool for proving limits."
 msgstr ""
 
 #. §0: `←`
-#. §1: `rw [← h]`
-#. §2: `b + c`
-#. §3: `a`
-#: Game.Levels.Rewriting.L06_RwReverse
-msgid "Since equality is a symmetric relation, we can also replace the right-hand side of an\n"
-"equality by the left-hand side using §0 as in the following example.\n"
-"\n"
-"Whenever you see in a Lean file a symbol that you don't see on your keyboard, such as ←,\n"
-"you can put your mouse cursor above it and learn from a tooltip how to type it.\n"
-"In the case of ←, you can type it by typing \"\\\\l \", so backslash-l-space.\n"
-"\n"
-"Note this rewriting from right to left story is all about sides in the equality you want to\n"
-"*use*, not about sides in what you want to *prove*. The §1 in the previous example\n"
-"replaced the right-hand side by the left-hand side, so it looked for §2 in the current\n"
-"goal and replaced it with §3."
+#: Game.Levels.Rewriting.L08_RwReverse
+msgid "The §0 means we use the equality from right to left."
 msgstr ""
 
 #. §0: `a`
@@ -244,82 +188,28 @@ msgstr ""
 msgid "Start by rewriting §0 using §1."
 msgstr ""
 
-#. §0: `ring`
-#. §1: `exp_add x y`
-#. §2: `exp(x+y) = exp(x) * exp(y)`
-#. §3: `exp_sub x y`
-#. §4: `exp(x-y) = exp(x) / exp(y)`
-#. §5: `exp_zero`
-#. §6: `exp 0 = 1`
-#. §7: `a + b - c`
-#. §8: `(a + b) - c`
-#. §9: `ring`
-#. §10: `mul_one x : x * 1 = x`
-#: Game.Levels.Rewriting.L05_RwLemma
-msgid "In the previous examples, we rewrote the goal using a local assumption. But we can\n"
-"also use lemmas. For instance let us prove a lemma about exponentiation.\n"
-"Since §0 only knows how to prove things from the axioms of rings,\n"
-"it doesn't know how to work with exponentiation.\n"
-"\n"
-"§1 is a proof that §2.\n"
-"§3 is §4.\n"
-"§5 is §6.\n"
-"\n"
-"Recall that §7 means §8.\n"
-"\n"
-"You can either use §9 or rewrite with §10 to simplify the denominator on the\n"
-"right-hand side."
-msgstr ""
-
-#: Game.Levels.Analysis.L02_SumLimit
-msgid "Limit of Sum"
-msgstr ""
-
-#: Game.Levels.Rewriting.L07_Calc
-msgid "Calculation layout using calc"
-msgstr ""
-
-#. §0: `rw`
-#: Game.Levels.Rewriting.L03_RwBasic
-msgid "Let us now see how to compute using assumptions relating the involved numbers.\n"
-"This uses the fundamental property of equality: if two\n"
-"mathematical objects A and B are equal then, in any statement involving A, one can replace A\n"
-"by B. This operation is called rewriting, and the basic Lean tactic for this is §0.\n"
-"Carefully step through the proof below and try to understand what is happening."
-msgstr ""
-
 #: Game.Levels.Rewriting.L03_RwBasic
 msgid "The rewriting tactic"
 msgstr ""
 
-#. §0: `«{h'}»`
-#. §1: `c`
-#. §2: `b`
-#: Game.Levels.Rewriting.L06_RwReverse
-#: Game.Levels.Rewriting.L06_RwReverse
-#: Game.Levels.Rewriting.L06_RwReverse
-msgid "Use §0 to replace §1 with §2."
+#. §0: `calc`
+#. §1: `exp_add`
+#. §2: `exp (2*a) = (exp b)^2 * (exp c)^2`
+#. §3: `a = b + c`
+#: Game.Levels.Rewriting.L12_CalcExp
+msgid "Combine §0 with §1 to show §2 when §3."
+msgstr ""
+
+#: Game.Levels.SetTheory.L01_InfSup
+msgid "The infimum is the greatest lower bound."
 msgstr ""
 
 #: Game.Levels.Rewriting.L04_RwMultiple
 msgid "Multiple rewrites"
 msgstr ""
 
-#: GameServer.RpcHandlers
-msgid "level completed! 🎉"
-msgstr ""
-
-#. §0: `→`
-#. §1: `↔`
-#. §2: `∀`
-#. §3: `∃`
-#: Game.Levels.Logic
-msgid "# Logic\n"
-"\n"
-"## Implications and Quantifiers\n"
-"\n"
-"In this world, we will learn how to handle logical implications (§0), equivalences (§1),\n"
-"and quantifiers (§2, §3)."
+#: Game.Levels.Logic.L06_Exists
+msgid "Existential Quantifiers"
 msgstr ""
 
 #. §0: `ring`
@@ -327,11 +217,8 @@ msgstr ""
 msgid "Use §0 to prove algebraic identities."
 msgstr ""
 
-#. §0: `intro`
-#: Game.Levels.Logic.L03_ProvingImplications
-msgid "Note that, when using §0, you need to give a name to the assumption.\n"
-"Lean will let you use a name that was already used, but the safe\n"
-"thing to do by default is to use a new name."
+#: Game.Levels.Rewriting.L05_RwAssumptions
+msgid "Rewriting with assumptions"
 msgstr ""
 
 #. §0: `ring`
@@ -356,53 +243,51 @@ msgstr ""
 msgid "Proving Implications"
 msgstr ""
 
-#. §0: `exp (a + b)`
-#. §1: `exp_add`
-#: Game.Levels.Rewriting.L05_RwLemma
-msgid "Now expand §0 using §1."
-msgstr ""
-
 #. §0: `intro`
-#. §1: `ha`
-#. §2: `a > 0`
-#. §3: `hb`
-#. §4: `b > 0`
 #: Game.Levels.Logic.L03_ProvingImplications
-msgid "Use §0 to bring the assumptions §1 (for §2) and §3 (for §4) into the context."
+msgid "Note that, when using §0, you need to give a name to the assumption.\n"
+"Lean will let you use a name that was already used, but the safe\n"
+"thing to do by default is to use a new name."
 msgstr ""
 
-#. §0: `rw [h, h']`
+#. §0: `h`
+#. §1: `h'`
+#. §2: `rw [h'] at h`
+#: Game.Levels.Rewriting.L10_RwAtExact
+msgid "Rewrite inside §0 using §1: §2."
+msgstr ""
+
+#: Game.Levels.Analysis.L04_Uniqueness
+msgid "Uniqueness of Limits"
+msgstr ""
+
+#. §0: `rw [← h]`
 #. §1: `h`
-#. §2: `h'`
-#. §3: `ring`
-#. §4: `h`
-#. §5: `h'`
-#: Game.Levels.Rewriting.L04_RwMultiple
-msgid "One can actually do several rewritings in one command.\n"
-"§0 rewrites §1 then §2.\n"
-"\n"
-"Now try it yourself. Note that §3 can still do calculations,\n"
-"but it doesn't use the assumptions §4 and §5."
+#: Game.Levels.Rewriting.L09_RwReverseEx
+msgid "Practice reverse rewriting. Use §0 to replace the right-hand side of §1 with its left-hand side in the goal."
+msgstr ""
+
+#: Game.Levels.Rewriting.L11_Calc
+msgid "Calculation layout (calc)"
 msgstr ""
 
 #. §0: `ring`
 #. §1: `mul_one`
-#: Game.Levels.Rewriting.L05_RwLemma
+#: Game.Levels.Rewriting.L07_ExpSub
 msgid "Now verify the equality with §0 or §1."
 msgstr ""
 
-#. §0: `have h2 : 0 < a^2`
-#: Game.Levels.Logic.L02_Forward
-msgid "Start by declaring §0."
+#: Game.Levels.Rewriting.L13_CalcEx
+msgid "calc exercise"
+msgstr ""
+
+#. §0: `calc`
+#: Game.Levels.Rewriting.L11_Calc
+msgid "The §0 block makes proof steps readable like on paper."
 msgstr ""
 
 #: Game.Levels.Logic.L02_Forward
 msgid "Forward reasoning allows you to build up intermediate facts to reach your goal."
-msgstr ""
-
-#. §0: `ring`
-#: Game.Levels.Rewriting.L04_RwMultiple
-msgid "Now verify the equality with §0."
 msgstr ""
 
 #. §0: `u n`
@@ -420,8 +305,493 @@ msgstr ""
 msgid "If a sequence is constant, it tends to its value."
 msgstr ""
 
+#. §0: `exp (a + b)`
+#. §1: `exp_add a b`
+#: Game.Levels.Rewriting.L06_ExpAdd
+msgid "Now rewrite §0 using §1."
+msgstr ""
+
+#. §0: `P ∧ Q`
+#. §1: `constructor`
+#. §2: `P`
+#. §3: `Q`
+#. §4: `h : P ∧ Q`
+#. §5: `rcases h with ⟨hP, hQ⟩`
+#. §6: `have ⟨hP, hQ⟩ := h`
+#: Game.Levels.Logic.L07_Conjunction
+msgid "# Conjunction\n"
+"\n"
+"To prove §0, use the §1 tactic. This will split the goal into two subgoals: prove §2, then prove §3.\n"
+"To use an assumption §4, you can decompose it using §5 or §6."
+msgstr ""
+
+#. §0: `«{h'}»`
+#. §1: `c`
+#. §2: `b`
+#. §3: `rw [← h']`
+#: Game.Levels.Rewriting.L09_RwReverseEx
+#: Game.Levels.Rewriting.L09_RwReverseEx
+#: Game.Levels.Rewriting.L09_RwReverseEx
+msgid "Use §0 to replace §1 with §2: §3."
+msgstr ""
+
+#. §0: `R`
+#. §1: `S`
+#. §2: `R`
+#. §3: `S`
+#. §4: `f : R →+* S`
+#: Game.Levels.Algebra.L01_RingHom
+msgid "# Ring Homomorphisms\n"
+"\n"
+"Given a ring §0 and a ring §1, a ring homomorphism from §2 to §3 is written §4.\n"
+"It preserves addition, multiplication, zero, and one."
+msgstr ""
+
+#: Game.Levels.Rewriting.L06_ExpAdd
+msgid "Rewriting with a lemma (exp_add)"
+msgstr ""
+
+#. §0: `0 < a`
+#: Game.Levels.Logic.L01_Implications
+msgid "The above proof is a direct proof: we already know §0 and we feed this fact into the\n"
+"implication."
+msgstr ""
+
+#. §0: `calc`
+#. §1: `exp_add`
+#: Game.Levels.Rewriting.L12_CalcExp
+msgid "You chained equalities using §0 and §1."
+msgstr ""
+
+#. §0: `∧`
+#: Game.Levels.Logic.L07_Conjunction
+msgid "Conjunction §0 represents \"and\"."
+msgstr ""
+
+#: Game.Levels.Analysis
+msgid "# Analysis\n"
+"\n"
+"## Sequence Limits\n"
+"\n"
+"In this world, we manipulate the elementary definition of limits of sequences of real numbers."
+msgstr ""
+
+#: Game.Levels.Analysis.L01_SequenceLimit
+msgid "Sequence Limit Definition"
+msgstr ""
+
+#. §0: `1 + 1 = 2`
+#: Game.Levels.Logic.L06_Exists
+msgid "Now prove §0."
+msgstr ""
+
+#: Game.Levels.Probability
+msgid "Probability"
+msgstr ""
+
+#. §0: `A ↔ B`
+#. §1: `A → B`
+#. §2: `B → A`
+#. §3: `constructor`
+#. §4: `A ↔ B`
+#. §5: `h : A ↔ B`
+#. §6: `rw [h]`
+#. §7: `A`
+#. §8: `B`
+#: Game.Levels.Logic.L04_Equivalences
+msgid "# Equivalences\n"
+"\n"
+"The equivalence §0 is just the conjunction of §1 and §2.\n"
+"You can prove it using §3 if the goal is §4.\n"
+"If you have an assumption §5, you can use §6 to replace §7 with §8."
+msgstr ""
+
+#: Game.Levels.Algebra
+msgid "Algebra"
+msgstr ""
+
+#: Game
+msgid "Interactive version of the Glimpse of Lean tutorial. Learn the basics of Lean 4 including rewriting, logic, and analysis through a series of puzzles."
+msgstr ""
+
+#: Game.Levels.Analysis.L02_SumLimit
+msgid "Great! You proved that the limit of a sum is the sum of the limits."
+msgstr ""
+
+#. §0: `x`
+#. §1: `x + 1 = 2`
+#: Game.Levels.Logic.L06_Exists
+msgid "Provide a real number §0 such that §1."
+msgstr ""
+
+#. §0: `rw`
+#. §1: `ring`
+#: Game.Levels.Rewriting.L05_RwAssumptions
+msgid "Correct! You used local assumptions with §0 then §1."
+msgstr ""
+
+#. §0: `exp_sub x y : exp(x-y) = exp(x) / exp(y)`
+#. §1: `exp_zero : exp 0 = 1`
+#. §2: `a + b - c`
+#. §3: `(a + b) - c`
+#. §4: `ring`
+#. §5: `mul_one x : x * 1 = x`
+#: Game.Levels.Rewriting.L07_ExpSub
+msgid "Use §0 and §1.\n"
+"\n"
+"Recall that §2 means §3.\n"
+"\n"
+"You can either use §4 or rewrite with §5 to simplify the denominator on the\n"
+"right-hand side."
+msgstr ""
+
+#. §0: `rw [h, h']`
+#: Game.Levels.Rewriting.L04_RwMultiple
+msgid "Rewrite both assumptions in one command: §0."
+msgstr ""
+
+#. §0: `simp`
+#: Game.Levels.Algebra.L01_RingHom
+msgid "Use §0 to simplify ring homomorphisms."
+msgstr ""
+
+#. §0: `N`
+#: Game.Levels.Analysis.L01_SequenceLimit
+msgid "We need to provide a natural number §0. Any number will do since the sequence is constant."
+msgstr ""
+
+#. §0: `exact`
+#: Game.Levels.Logic.L01_Implications
+msgid "You can use §0 to provide the proof term directly."
+msgstr ""
+
+#. §0: `c = 2*a*d`
+#. §1: `calc`
+#: Game.Levels.Rewriting.L13_CalcEx
+msgid "Prove §0 using §1 with the given assumptions."
+msgstr ""
+
+#. §0: `h'`
+#. §1: `h`
+#. §2: `rw [h', h]`
+#: Game.Levels.Rewriting.L05_RwAssumptions
+msgid "Rewrite using §0 and §1 to simplify the goal (e.g. §2)."
+msgstr ""
+
+#: Game.Levels.Analysis.L04_Uniqueness
+msgid "# Uniqueness of Limits\n"
+"\n"
+"A sequence cannot converge to two different limits."
+msgstr ""
+
+#: Game.Levels.Logic.L06_Exists
+msgid "Existential quantifiers assert the existence of an element satisfying a property."
+msgstr ""
+
+#. §0: `linarith`
+#. §1: `exact`
+#. §2: `0 ≤ ε`
+#: Game.Levels.Analysis.L01_SequenceLimit
+msgid "Finally, use §0 or §1 to prove §2."
+msgstr ""
+
+#: Game.Levels.Rewriting.L07_ExpSub
+msgid "exp_sub and exp_zero"
+msgstr ""
+
+#. §0: `IndepSet`
+#: Game.Levels.Probability.L01_Independence
+msgid "Use §0 definition."
+msgstr ""
+
+#: Game.Levels.Logic.L01_Implications
+msgid "Using implications"
+msgstr ""
+
+#. §0: `a + b = c`
+#. §1: `a = c - b`
+#: Game.Levels.Logic.L04_Equivalences
+msgid "First direction: assume §0, prove §1."
+msgstr ""
+
+#. §0: `u`
+#. §1: `l`
+#. §2: `v`
+#. §3: `l'`
+#. §4: `u+v`
+#. §5: `l+l'`
+#. §6: `rcases`
+#. §7: `N`
+#: Game.Levels.Analysis.L02_SumLimit
+msgid "If §0 tends to §1 and §2 tends §3 then §4 tends to §5.\n"
+"You will need to use §6 to extract §7 from the limit definitions."
+msgstr ""
+
+#. §0: `exp (a + b + c)`
+#. §1: `exp_add (a + b) c`
+#: Game.Levels.Rewriting.L06_ExpAdd
+msgid "First rewrite §0 using §1."
+msgstr ""
+
+#. §0: `have`
+#. §1: `have my_name : my_statement := by`
+#. §2: `my_name`
+#. §3: `exact`
+#. §4: `by`
+#. §5: `exact`
+#. §6: `exact`
+#. §7: `:=`
+#: Game.Levels.Logic.L02_Forward
+msgid "You can also give a proof with forward reasoning, using the §0 tactic.\n"
+"In order to announce an intermediate statement we use:\n"
+"\n"
+"§1\n"
+"\n"
+"and then increase the indentation level.\n"
+"This triggers the apparition of a new goal: proving the statement.\n"
+"After the proof is done, the statement becomes available under the name §2.\n"
+"If the proof is a single §3 tactic then you can get rid\n"
+"of §4 and §5 and directly put the argument of §6 after the §7."
+msgstr ""
+
+#: Game.Levels.Logic.L07_Conjunction
+msgid "Conjunction"
+msgstr ""
+
+#. §0: `simp`
+#: Game.Levels.Algebra.L01_RingHom
+msgid "§0 is very effective at simplifying expressions involving ring homomorphisms."
+msgstr ""
+
+#. §0: `ring`
+#. §1: `rw`
+#. §2: `exact`
+#. §3: `calc`
+#: Game.Levels.Rewriting.L13_CalcEx
+msgid "Congratulations! You've learned §0, §1, §2, and §3."
+msgstr ""
+
+#: Game.Levels.Analysis.L04_Uniqueness
+msgid "Limits are unique in Hausdorff spaces (like ℝ)."
+msgstr ""
+
+#: Game.Levels.Logic
+msgid "Logic"
+msgstr ""
+
+#. §0: `ring`
+#: Game.Levels.Rewriting.L03_RwBasic
+msgid "Now finish with §0."
+msgstr ""
+
+#. §0: `ring`
+#: Game.Levels.Rewriting.L01_Associativity
+msgid "Great! The §0 tactic handles basic algebraic identities."
+msgstr ""
+
+#. §0: `b`
+#. §1: `«{h'}»`
+#: Game.Levels.Rewriting.L03_RwBasic
+msgid "Note the goal changed. Now rewrite §0 using §1."
+msgstr ""
+
+#. §0: `P ⇒ Q`
+#. §1: `P`
+#. §2: `Q`
+#. §3: `→`
+#. §4: `⇒`
+#. §5: `a`
+#. §6: `sq_pos_of_pos`
+#. §7: `0 < a → 0 < a^2`
+#. §8: `sq_pos_of_pos`
+#. §9: `ha`
+#: Game.Levels.Logic.L01_Implications
+msgid "# Implications\n"
+"\n"
+"In Lean, the inhabitants of a proposition are precisely the proofs of that proposition.\n"
+"Proving an implication §0 amounts to producing a function that turns proofs of §1\n"
+"into proofs of §2. Therefore, Lean denotes implication by the symbol §3 instead of §4.\n"
+"\n"
+"For instance, given a real number §5, the lemma §6 claims §7\n"
+"so the proof belows apply the \"function\" §8 to the assumption §9."
+msgstr ""
+
+#. §0: `|l - l|`
+#: Game.Levels.Analysis.L01_SequenceLimit
+msgid "Simplify §0."
+msgstr ""
+
+#. §0: `n`
+#. §1: `hn`
+#: Game.Levels.Analysis.L01_SequenceLimit
+msgid "Now introduce §0 and §1."
+msgstr ""
+
+#. §0: `f 0 ≤ g 0`
+#. §1: `h'`
+#: Game.Levels.Logic.L05_Forall
+msgid "Now we know §0. Use §1 to finish."
+msgstr ""
+
+#. §0: `A`
+#. §1: `B`
+#. §2: `ℙ (A ∩ B) = ℙ A * ℙ B`
+#: Game.Levels.Probability.L01_Independence
+msgid "# Independent Sets\n"
+"\n"
+"Two sets §0 and §1 are independent if §2."
+msgstr ""
+
+#: Game
+msgid "Based on the [Glimpse of Lean](https://github.com/PatrickMassot/GlimpseOfLean) tutorial."
+msgstr ""
+
+#. §0: `exp_add x y`
+#. §1: `exp(x + y) = exp(x) * exp(y)`
+#: Game.Levels.Rewriting.L06_ExpAdd
+msgid "We can also use lemmas from the library. For instance §0 proves\n"
+"§1. We will rewrite twice with this lemma."
+msgstr ""
+
+#: Game
+msgid "# Glimpse of Lean\n"
+"\n"
+"Welcome to this tutorial designed to give you a glimpse of Lean.\n"
+"\n"
+"This game is split into **Worlds**. Each world focuses on a specific aspect of Lean.\n"
+"\n"
+"*   **Computing**: Learn how to calculate and rewrite equalities.\n"
+"*   **Logic**: Learn how to handle logical implications and quantifiers.\n"
+"*   **Analysis**: Learn how to handle limits of sequences.\n"
+"*   **Set Theory**: Explore Galois connections and lattices.\n"
+"*   **Algebra**: Explore rings, homomorphisms, and ideals.\n"
+"*   **Probability**: Explore probability measures and independence.\n"
+"\n"
+"Start with the **Computing** world to learn the basics."
+msgstr ""
+
+#: Game.Levels.Probability.L01_Independence
+msgid "Independent Sets"
+msgstr ""
+
+#: Game.Levels.SetTheory
+msgid "# Set Theory\n"
+"\n"
+"In this world, we explore Galois connections (adjunctions) between complete lattices."
+msgstr ""
+
+#: Game.Levels.Analysis.L02_SumLimit
+msgid "Limit of Sum"
+msgstr ""
+
+#. §0: `calc`
+#. §1: `:=`
+#. §2: `_`
+#: Game.Levels.Rewriting.L11_Calc
+msgid "The §0 tactic gives a natural layout for chain of equalities.\n"
+"After each §1, the goal is to prove that line equals the previous right-hand side (or the first left-hand side).\n"
+"Use §2 for the right-hand side of the previous line."
+msgstr ""
+
+#. §0: `rw`
+#: Game.Levels.Rewriting.L03_RwBasic
+msgid "Let us now see how to compute using assumptions relating the involved numbers.\n"
+"This uses the fundamental property of equality: if two\n"
+"mathematical objects A and B are equal then, in any statement involving A, one can replace A\n"
+"by B. This operation is called rewriting, and the basic Lean tactic for this is §0.\n"
+"Carefully step through the proof below and try to understand what is happening."
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed! 🎉"
+msgstr ""
+
+#. §0: `∀ x, P x`
+#. §1: `intro x`
+#. §2: `h : ∀ x, P x`
+#. §3: `specialize h my_value`
+#. §4: `have hp := h my_value`
+#: Game.Levels.Logic.L05_Forall
+msgid "# Universal Quantifiers\n"
+"\n"
+"To prove a goal of the form §0, you can use §1.\n"
+"To use an assumption §2, you can specialize it to a specific value using §3\n"
+"or simply apply it to the value: §4."
+msgstr ""
+
+#: Game.Levels.Probability.L01_Independence
+msgid "Independence is a symmetric relation."
+msgstr ""
+
+#. §0: `exp (a + b)`
+#. §1: `exp_add`
+#: Game.Levels.Rewriting.L07_ExpSub
+msgid "Now expand §0 using §1."
+msgstr ""
+
+#. §0: `intro`
+#. §1: `ha`
+#. §2: `a > 0`
+#. §3: `hb`
+#. §4: `b > 0`
+#: Game.Levels.Logic.L03_ProvingImplications
+msgid "Use §0 to bring the assumptions §1 (for §2) and §3 (for §4) into the context."
+msgstr ""
+
+#. §0: `have h2 : 0 < a^2`
+#: Game.Levels.Logic.L02_Forward
+msgid "Start by declaring §0."
+msgstr ""
+
+#: Game.Levels.Logic.L04_Equivalences
+msgid "Equivalences"
+msgstr ""
+
+#: Game.Levels.Algebra
+msgid "# Algebra\n"
+"\n"
+"In this world, we explore commutative rings, ideals, and quotients."
+msgstr ""
+
+#: Game.Levels.Rewriting.L12_CalcExp
+msgid "calc with exp"
+msgstr ""
+
+#. §0: `ring`
+#: Game.Levels.Rewriting.L05_RwAssumptions
+msgid "Now verify the equality with §0."
+msgstr ""
+
+#: Game.Levels.Probability.L01_Independence
+msgid "Commutativity of intersection and multiplication."
+msgstr ""
+
+#. §0: `x₀`
+#. §1: `s`
+#. §2: `X`
+#. §3: `X`
+#. §4: `s`
+#. §5: `x₀`
+#: Game.Levels.SetTheory.L01_InfSup
+msgid "# Infimum and Supremum\n"
+"\n"
+"An element §0 is an infimum of a set §1 in §2 if every element of §3 is a lower bound of §4 if and only if it is below §5."
+msgstr ""
+
+#. §0: `rw [h, h']`
+#. §1: `h`
+#. §2: `h'`
+#: Game.Levels.Rewriting.L04_RwMultiple
+msgid "One can actually do several rewritings in one command.\n"
+"§0 rewrites using §1 then §2 in a single step."
+msgstr ""
+
 #: Game.Levels.Rewriting.L02_Expansion
 msgid "Expansion"
+msgstr ""
+
+#: Game.Levels.Logic.L04_Equivalences
+msgid "Equivalences are powerful because they allow you to rewrite propositions."
 msgstr ""
 
 #. §0: `u`
@@ -442,32 +812,20 @@ msgid "# Sequence Limits\n"
 "Note the use of §5 which is an abbreviation of §6."
 msgstr ""
 
-#. §0: `ring`
-#. §1: `rw`
-#. §2: `exact`
-#. §3: `calc`
-#: Game.Levels.Rewriting.L07_Calc
-msgid "Congratulations, this is the end of your first exercise file! You've seen what typing\n"
-"a Lean proof looks like and have learned about the following tactics:\n"
-"* §0\n"
-"* §1\n"
-"* §2\n"
-"* §3"
-msgstr ""
-
-#: Game.Levels.Rewriting.L05_RwLemma
-msgid "Rewriting with a lemma"
-msgstr ""
-
 #. §0: `add_pos`
 #: Game.Levels.Logic.L03_ProvingImplications
 msgid "Now use §0 with your new assumptions."
 msgstr ""
 
-#. §0: `0 < a`
-#: Game.Levels.Logic.L01_Implications
-msgid "The above proof is a direct proof: we already know §0 and we feed this fact into the\n"
-"implication."
+#. §0: `rw [exp_add, exp_add]`
+#: Game.Levels.Rewriting.L06_ExpAdd
+msgid "You can also write §0 and Lean will rewrite the first matching subexpressions."
+msgstr ""
+
+#. §0: `h`
+#. §1: `0`
+#: Game.Levels.Logic.L05_Forall
+msgid "Apply the hypothesis §0 to §1."
 msgstr ""
 
 #. §0: `ring`
@@ -483,34 +841,45 @@ msgid "# Computing\n"
 "the properties of all commutative rings."
 msgstr ""
 
-#. §0: `«{h}»`
-#. §1: `«{h'}»`
-#. §2: `rw [«{h}», «{h'}»]`
-#: Game.Levels.Rewriting.L04_RwMultiple
-msgid "Try rewriting both §0 and §1. You can do it in one command §2 or two."
+#. §0: `isInf`
+#. §1: `x₀`
+#: Game.Levels.SetTheory.L01_InfSup
+msgid "Apply the definition of §0 to §1."
 msgstr ""
 
-#: Game.Levels.Analysis
-msgid "# Analysis\n"
-"\n"
-"## Sequence Limits\n"
-"\n"
-"In this world, we manipulate the elementary definition of limits of sequences of real numbers."
+#. §0: `h`
+#. §1: `exact h`
+#: Game.Levels.Rewriting.L10_RwAtExact
+msgid "Now the assumption §0 is exactly what we need. Use §1."
 msgstr ""
 
-#: Game.Levels.Analysis.L01_SequenceLimit
-msgid "Sequence Limit Definition"
+#. §0: `←`
+#. §1: `rw [← h]`
+#. §2: `h`
+#: Game.Levels.Rewriting.L08_RwReverse
+msgid "Since equality is symmetric, we can replace the *right*-hand side of an equality\n"
+"by the *left*-hand side using §0 (type with \\\\l ). So §1 looks for the\n"
+"right-hand side of §2 in the goal and replaces it with the left-hand side."
+msgstr ""
+
+#. §0: `exact`
+#: Game.Levels.Rewriting.L10_RwAtExact
+msgid "You rewrote in a hypothesis and then used §0 to finish."
+msgstr ""
+
+#: Game.Levels.Logic.L04_Equivalences
+msgid "We can prove this equivalence by proving both directions."
 msgstr ""
 
 #. §0: `exp (a + b - c)`
 #. §1: `exp_sub`
-#: Game.Levels.Rewriting.L05_RwLemma
+#: Game.Levels.Rewriting.L07_ExpSub
 msgid "Start by expanding §0 using §1."
 msgstr ""
 
 #. §0: `exp 0`
 #. §1: `exp_zero`
-#: Game.Levels.Rewriting.L05_RwLemma
+#: Game.Levels.Rewriting.L07_ExpSub
 msgid "Simplify §0 using §1."
 msgstr ""
 
@@ -530,8 +899,22 @@ msgstr ""
 msgid "Now prove §0 using §1 and §2."
 msgstr ""
 
-#: Game.Levels.Rewriting.L06_RwReverse
+#: Game.Levels.Algebra.L01_RingHom
+msgid "Ring Homomorphisms"
+msgstr ""
+
+#: Game.Levels.Rewriting.L09_RwReverseEx
 msgid "Correct! You used reverse rewriting."
+msgstr ""
+
+#: Game.Levels.Rewriting.L10_RwAtExact
+msgid "Rewriting in an assumption"
+msgstr ""
+
+#: Game.Levels.Probability
+msgid "# Probability\n"
+"\n"
+"In this world, we explore probability measures, independent sets, and Bayes' theorem."
 msgstr ""
 
 #: Game.Levels.Analysis
@@ -542,10 +925,10 @@ msgstr ""
 msgid "The ring tactic"
 msgstr ""
 
-#: Game
-msgid "Interactive version of the Glimpse of Lean tutorial. Learn the basics of Lean 4 including rewriting, logic, and analysis through a series of puzzles."
+#: Game.Levels.SetTheory.L01_InfSup
+msgid "Infimum and Supremum"
 msgstr ""
 
-#: Game.Levels.Analysis.L02_SumLimit
-msgid "Great! You proved that the limit of a sum is the sum of the limits."
+#: Game.Levels.Logic.L05_Forall
+msgid "Universal Quantifiers"
 msgstr ""

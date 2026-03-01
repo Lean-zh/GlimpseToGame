@@ -1,5 +1,7 @@
 import Game.Levels.Analysis.L01_SequenceLimit
 import Game.Levels.Analysis.L02_SumLimit
+import Game.Levels.Analysis.L03_SqueezeTheorem
+import Game.Levels.Analysis.L04_Uniqueness
 
 World "Analysis"
 Title "Analysis"
