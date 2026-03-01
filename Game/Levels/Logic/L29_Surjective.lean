@@ -1,5 +1,6 @@
 import GameServer.Commands
 import Game.Library.Basic
+open Function
 
 World "Logic"
 Level 29
