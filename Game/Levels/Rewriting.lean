@@ -1,0 +1,22 @@
+import Game.Levels.Rewriting.L01_Associativity
+import Game.Levels.Rewriting.L02_Expansion
+import Game.Levels.Rewriting.L03_RwBasic
+import Game.Levels.Rewriting.L04_RwMultiple
+import Game.Levels.Rewriting.L05_RwLemma
+import Game.Levels.Rewriting.L06_RwReverse
+import Game.Levels.Rewriting.L07_Calc
+
+World "Rewriting"
+Title "Computing"
+
+Introduction "
+# Computing
+
+## The ring tactic
+
+One of the earliest kind of proofs one encounters while learning mathematics is proving by
+a calculation. It may not sound like a proof, but this is actually using lemmas expressing
+properties of operations on numbers. Of course we usually don't want to invoke those explicitly
+so mathlib has a tactic `ring` taking care of proving equalities that follow by applying
+the properties of all commutative rings.
+"
