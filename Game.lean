@@ -46,7 +46,7 @@ Languages "en" "zh"
 CaptionShort "Glimpse of Lean tutorial gamified"
 CaptionLong "Interactive version of the Glimpse of Lean tutorial. Learn the basics of Lean 4 including rewriting, logic, and analysis through a series of puzzles."
 -- Prerequisites "" -- add this if your game depends on other games
--- CoverImage "images/cover.png"
+CoverImage "https://qiniu.wzhecnu.cn/FileBed/source/city_lib_副本.png"
 
 /-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame

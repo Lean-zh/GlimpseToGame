@@ -468,23 +468,6 @@ msgstr ""
 msgid "Conjunction §0 is \"and\". Use §1 to use it, §2 to prove it."
 msgstr ""
 
-#: Game
-msgid "# Glimpse of Lean\n"
-"\n"
-"Welcome to this tutorial designed to give you a glimpse of Lean.\n"
-"\n"
-"This game is split into **Worlds**. Each world focuses on a specific aspect of Lean.\n"
-"\n"
-"*   **Computing**: Learn how to calculate and rewrite equalities (Basic & Advanced).\n"
-"*   **Logic**: Learn how to handle logical implications, equivalences, quantifiers, and conjunctions (Parts 1-3).\n"
-"*   **Analysis**: Learn how to handle limits of sequences.\n"
-"*   **Set Theory**: Explore Galois connections and lattices.\n"
-"*   **Algebra**: Explore rings, homomorphisms, and ideals.\n"
-"*   **Probability**: Explore probability measures and independence.\n"
-"\n"
-"Start with the **Computing (1)** world to learn the basics."
-msgstr ""
-
 #. §0: `A`
 #. §1: `B`
 #. §2: `ℙ (A ∩ B) = ℙ A * ℙ B`
@@ -503,6 +486,23 @@ msgstr ""
 #: Game.Levels.Rewriting.L06_ExpAdd
 msgid "We can also use lemmas from the library. For instance §0 proves\n"
 "§1. We will rewrite twice with this lemma."
+msgstr ""
+
+#: Game
+msgid "# Glimpse of Lean\n"
+"\n"
+"Welcome to this tutorial designed to give you a glimpse of Lean.\n"
+"\n"
+"This game is split into **Worlds**. Each world focuses on a specific aspect of Lean.\n"
+"\n"
+"*   **Computing**: Learn how to calculate and rewrite equalities.\n"
+"*   **Logic**: Learn how to handle logical implications and quantifiers.\n"
+"*   **Analysis**: Learn how to handle limits of sequences.\n"
+"*   **Set Theory**: Explore Galois connections and lattices.\n"
+"*   **Algebra**: Explore rings, homomorphisms, and ideals.\n"
+"*   **Probability**: Explore probability measures and independence.\n"
+"\n"
+"Start with the **Computing** world to learn the basics."
 msgstr ""
 
 #: Game.Levels.Logic.L08_EquivRw
